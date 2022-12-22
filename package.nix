@@ -8,6 +8,7 @@
   imports = [
     ./pkgs/nvim.nix
     ./pkgs/fonts.nix
+    ./pkgs/git.nix
   ];
 
   # services.kdeconnect = {
@@ -23,6 +24,9 @@
 
     #graphics	
 	  inkscape gimp krita
+
+    #cachix
+    cachix
 
   ];
 
