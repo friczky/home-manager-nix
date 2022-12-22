@@ -20,6 +20,10 @@
     burpsuite
     filezilla
     php
+
+    #graphics	
+	  inkscape gimp krita
+
   ];
 
    #fish 
