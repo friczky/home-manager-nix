@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./pkgs/general.nix
+    ./package.nix
   ];
 
   home = {
@@ -10,7 +10,7 @@
     stateVersion = "22.11"; #do not touch
     homeDirectory = "/home/friczky";
     enableNixpkgsReleaseCheck = true;
-
+  
     # file = {
     #   ".config/gromit-mpx.ini".source                       = ./configs/gromit-mpx.ini;
     #   ".config/flameshot".source                            = ./configs/flameshot;
@@ -25,4 +25,5 @@
     #   ".Xresources".source                                  = ./configs/Xresources;
     # };
   };
+  
 }
