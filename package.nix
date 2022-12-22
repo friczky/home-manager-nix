@@ -6,16 +6,8 @@
 #using unstable means regular updates, ie more data usage
 {
   imports = [
-    # ./git.nix
-    # ./bat.nix
-    # ./mpv.nix
     ./pkgs/nvim.nix
-    # ./htop.nix
-    # ./kitty.nix
     ./pkgs/fonts.nix
-    # ./mcfly.nix
-    # ./zathura.nix
-    # ./redshift.nix
   ];
 
   # services.kdeconnect = {
