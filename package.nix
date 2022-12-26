@@ -11,22 +11,29 @@
     ./pkgs/git.nix
   ];
 
-  # services.kdeconnect = {
-  #   enable = true;
-  #   indicator = true;
-  # };
+
 
   home.packages = with pkgs; [
     ## your package
     burpsuite
     filezilla
-    php
+    postman
+    xorg.xhost
+    btop
+    brave
+
+    ##vivaldi browser
+    vivaldi vivaldi-ffmpeg-codecs vivaldi-widevine
 
     #graphics	
-	  inkscape gimp krita
+	  inkscape gimp krita libsForQt5.qtstyleplugin-kvantum
 
     #cachix
     cachix
+
+    #php 8.1
+    php
+    php81Packages.composer
 
   ];
 
@@ -34,13 +41,13 @@
   programs.fish= {
     enable=true;
     shellAliases = {
-	ll = "ls -al";
- 	du = "${pkgs.du-dust}/bin/dust";
-	bt = "sudo docker exec -ti aapanel bash 'bt'";
-	php = "sudo docker exec -ti aapanel php";
-	composer = "sudo docker exec -ti aapanel composer";
-  ytmp3 = "yt-dlp -f 'ba' -x --audio-format mp3";
-   };
+        ll = "ls -al";
+        du = "${pkgs.du-dust}/bin/dust";
+        bt = "sudo docker exec -ti aapanel bash 'bt'";
+        # composer = "sudo docker exec -ti aapanel composer";
+        mysql = "sudo docker exec -ti aapanel mysql";
+        ytmp3 = "yt-dlp -f 'ba' -x --audio-format mp3";
+        };
   };
   
   nixpkgs.config.allowUnfree = true;
