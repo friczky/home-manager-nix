@@ -20,7 +20,12 @@
     postman
     xorg.xhost
     btop
-    brave
+
+    #browser
+    brave google-chrome-beta
+
+    #nodejs
+    yarn
 
     ##vivaldi browser
     vivaldi vivaldi-ffmpeg-codecs vivaldi-widevine
@@ -34,6 +39,9 @@
     #php 8.1
     php
     php81Packages.composer
+
+    #mail
+    mailutils
 
   ];
 
