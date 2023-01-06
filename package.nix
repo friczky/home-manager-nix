@@ -12,7 +12,6 @@
   ];
 
 
-
   home.packages = with pkgs; [
     ## your package
     burpsuite
@@ -21,9 +20,15 @@
     xorg.xhost
     btop
 
+    #database
+    adminer
+
+    #package manager
+    flatpak
+
     #browser
     brave google-chrome-beta
-
+  
     #nodejs
     yarn
 
@@ -43,6 +48,11 @@
     #mail
     mailutils
 
+    unetbootin
+
+    #chat
+    discord
+
   ];
 
    #fish 
@@ -59,4 +69,6 @@
   };
   
   nixpkgs.config.allowUnfree = true;
+  
+
 }
