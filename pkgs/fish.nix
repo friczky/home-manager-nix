@@ -1,18 +1,22 @@
 { config, pkgs, lib, ... }:
 
 {
-  programs.fish = {
-    enable = true;
-    functions = [
-      {
-        name = "mzish";
-        src = pkgs.fetchFromGitHub {
-          owner = "creator54";
-          repo = "mzish";
-          rev = "v2";
-          sha256 = "3VkbPDDuX/PGFHNDOSmS0RPUgEdB0x7t7BDecc98rDQ=";
+    #fish 
+  programs.fish= {
+    enable=true;
+    shellAliases = {
+        ll = "ls -al";
+        du = "${pkgs.du-dust}/bin/dust";
+        bt = "sudo docker exec -ti aapanel bash 'bt'";
+        # composer = "sudo docker exec -ti aapanel composer";
+        mysql = "sudo docker exec -ti aapanel mysql";
+        ytmp3 = "yt-dlp -f 'ba' -x --audio-format mp3";
+        gc = "git clone";
+        gp = "git push";
+        gcm = "git commit -m";
+        gb = "git checkout";
+        ga = "git add .";
+        musik = "ncmpcpp";
         };
-      }
-    ];
   };
 }

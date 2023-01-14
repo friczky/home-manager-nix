@@ -11,7 +11,7 @@
     username = "friczky";
     stateVersion = "22.11"; #do not touch
     homeDirectory = "/home/friczky";
-    enableNixpkgsReleaseCheck = true;
+    enableNixpkgsReleaseCheck = false;
 
   };
   
