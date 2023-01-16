@@ -28,7 +28,7 @@
     #developer
     git nodejs yarn   
     nodePackages_latest.vue-cli
-    go
+    go terraform
     
     #cachix
     cachix gtk3
