@@ -17,7 +17,6 @@
         gb = "git checkout";
         ga = "git add .";
         musik = "ncmpcpp";
-        kubectl = "minikube kubectl";
         update = "sudo pacman -Syu";
         instal = "sudo pacman -S";
         install = "sudo yay -S";
@@ -29,6 +28,13 @@
         trf = "terraform";
         dinit = "devenv init";
         dup = "devenv up";
+        remove = "sudo pacman -S";
+        dr = "docker run -d";
+        dc = "docker-compose -f";
+        dcu = "docker-compose -f docker-compose.yml up -d";
+        dcd = "docker-compose -f docker-compose.yml down";
+        dps = "docker ps";
+        mongo ="docker exec -ti mongodb mongo";
         };
   };
 }

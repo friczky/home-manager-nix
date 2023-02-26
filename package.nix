@@ -26,12 +26,20 @@
     scrcpy
     
     #developer
-    git nodejs yarn   
-    nodePackages_latest.vue-cli
-    go terraform
-    
+    git
+    #go
+    terraform
+    git-cola
+    kubectl
+    helix
+
     #cachix
     cachix gtk3
+
+    #nodejs
+    yarn
+    nodePackages_latest.vue-cli
+    nodePackages_latest.elasticdump
 
     #php 8.1
     php
@@ -40,6 +48,14 @@
     #youtube
     yt-dlp
     
+    freshfetch
+    
+    #security
+    sqlmap subfinder metasploit burpsuite 
+    doctl s3cmd
+
+    #database
+    jetbrains.datagrip
     
   ];
 
